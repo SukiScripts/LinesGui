@@ -1,4 +1,8 @@
 -- NotRllyRn's Gui to Lua\n-- Version: 3.2
+local A_1 = game.Players.LocalPlayer.name.." Loaded Line's Script Hub"-----message here
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
 
 -- Instances:
 
@@ -3755,7 +3759,7 @@ TextButton_3.Text = "IV Admin"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 33.000
 TextButton_3.MouseButton1Down:Connect(function()
-	
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin.lua'))()	
 end)
 UICorner_6.Parent = TextButton_3
 
@@ -3768,7 +3772,10 @@ TextButton_4.Text = "Fast Farm"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextSize = 33.000
 TextButton_4.MouseButton1Down:Connect(function()
-	
+	while true do
+		wait(0.0)
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+	end
 end)
 UICorner_7.Parent = TextButton_4
 
@@ -3809,7 +3816,10 @@ TextButton_7.Text = "SS Farm"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 33.000
 TextButton_7.MouseButton1Down:Connect(function()
-	
+    while true do
+		wait(0.0)
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.up.RemoteEvent:FireServer()
+	end
 end)
 UICorner_10.Parent = TextButton_7
 
