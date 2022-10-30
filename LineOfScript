@@ -1,8 +1,8 @@
--- NotRllyRn's Gui to Lua\n-- Version: 3.2
 local A_1 = game.Players.LocalPlayer.name.." Loaded Line's Script Hub"-----message here
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
+-- NotRllyRn's Gui to Lua\n-- Version: 3.2
 
 -- Instances:
 
@@ -3727,7 +3727,6 @@ PsychoXpeach Hub Full Version 2.7.2
 
 
 end)
-
 UICorner_4.Parent = TextButton
 
 TextButton_2.Parent = Frame
@@ -3747,7 +3746,6 @@ TextButton_2.MouseButton1Down:Connect(function()
 		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
 	end
 end)
-
 UICorner_5.Parent = TextButton_2
 
 TextButton_3.Parent = Frame
@@ -3759,7 +3757,7 @@ TextButton_3.Text = "IV Admin"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 33.000
 TextButton_3.MouseButton1Down:Connect(function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin.lua'))()	
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin.lua'))()
 end)
 UICorner_6.Parent = TextButton_3
 
@@ -3787,9 +3785,7 @@ TextButton_5.Font = Enum.Font.SourceSans
 TextButton_5.Text = "Soon!"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 33.000
-TextButton_5.MouseButton1Down:Connect(function()
-	
-end)
+
 UICorner_8.Parent = TextButton_5
 
 TextButton_6.Parent = Frame
@@ -3804,7 +3800,7 @@ TextButton_6.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SukiScripts/LuaGui/main/Gui"), true))()
 	--creator: Kevon
 	--Btw This is V1.2 Join Our DIscord Server! https://discord.gg/w3mYRWuWRq
-end)
+	end)
 UICorner_9.Parent = TextButton_6
 
 TextButton_7.Parent = Frame
@@ -3816,10 +3812,12 @@ TextButton_7.Text = "SS Farm"
 TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_7.TextSize = 33.000
 TextButton_7.MouseButton1Down:Connect(function()
-    while true do
-		wait(0.0)
-		game:GetService("Players").LocalPlayer.Character.sword.Handle.up.RemoteEvent:FireServer()
-	end
+	TextButton_2.MouseButton1Down:connect(function()
+		while true do
+			wait(0.0)
+			game:GetService("Players").LocalPlayer.Character.sword.Handle.up.RemoteEvent:FireServer()
+		end
+	end)
 end)
 UICorner_10.Parent = TextButton_7
 
@@ -3888,3 +3886,46 @@ TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = "Find Him And Get Free Gui!!"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 14.000
+
+-- Scripts:
+
+local function KSFSLP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(KSFSLP_fake_script)()
