@@ -5502,43 +5502,6 @@ TextButton_2.MouseButton1Down:Connect(function()
 		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
 		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
 		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
-		game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
 	end
 end)
 UICorner_5.Parent = TextButton_2
@@ -5690,7 +5653,7 @@ local function KSFSLP_fake_script() -- Frame.LocalScript
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
-	local dragSpeed = 0.25
+	local dragSpeed = 0
 	local dragStart = nil
 	local startPos = nil
 	
