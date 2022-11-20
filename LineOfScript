@@ -3786,6 +3786,22 @@ TextButton_4.MouseButton1Down:Connect(function()
 	while true do
 		wait(0.0)
 		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
+		game:GetService("Players").LocalPlayer.Character.sword.Handle.pr.RemoteEvent:FireServer()
 	end
 end)
 UICorner_7.Parent = TextButton_4
@@ -3843,18 +3859,12 @@ TextButton_8.Text = "Auto Heal"
 TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_8.TextSize = 33.000
 TextButton_8.MouseButton1Down:Connect(function()
-	  while wait() do
-        if game.Players.LocalPlayer.Backpack:FindFirstChild("sword") then
-		game.Players.LocalPlayer.Backpack.sword.Handle.dmg.RemoteEvent:FireServer(game.Players.LocalPlayer.Character.Humanoid, - math.huge)
-		wait(0.0)
-	else
-		game.Players.LocalPlayer.Character:FindFirstChild("sword").Handle.dmg.RemoteEvent:FireServer(game.Players.LocalPlayer.Character.Humanoid, - math.huge)
-	end
-	while wait() do
-		game.Players.LocalPlayer.Character.Humanoid.Health = "-nan(ind)"
-		game.Players.LocalPlayer.Character.pvp:Destroy()
-	end
-    end
+	 while wait (0.0) do
+workspace.__EVENTS.Loader:FireServer()
+workspace.__EVENTS.Re:FireServer()
+workspace.__EVENTS.He:FireServer()
+workspace.__EVENTS.Heal:FireServer()
+end
 end)
 UICorner_11.Parent = TextButton_8
 
